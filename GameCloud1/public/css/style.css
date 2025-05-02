@@ -1,0 +1,428 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #043874;
+    padding: 0px 20px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 18px;
+    position: relative; /*Coloca na posição normal pra ser ajustada*/
+    z-index: 10; /*Sobe na ordem de empilhamento*/
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(110%); /*Aumenta o tamanho*/
+    transition: all 0.2s ease; /*Deixa a transição suave*/
+}
+
+.header .titulos {
+    text-align: left;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.header .titulos h1 {
+    margin-bottom: 12px;
+}
+
+.header .titulos h2 {
+    margin-top: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.header a:nth-child(4) { /*Seleciona apenas o quarto <a>*/
+    margin-right: 20px;
+}
+
+.header a:hover {
+    color:khaki;
+    transform: scale(110%);
+    transition: all 0.2s ease;
+}
+
+.carrinho-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.carrinho-container img {
+    width: 30px;
+    height: auto;
+    margin-right: -40px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.login-container img {
+    width: 30px;
+    height: auto;
+    margin-right: -43px;
+}
+
+.destaques {
+    background-image: url('/images/fundo.jpeg');
+    background-size: cover; /*Cobre toda a div*/
+    background-position: center;
+    height: calc(100vh - 160px); /*Desconta a altura do header*/
+    position: relative;
+    overflow: hidden; /*Esconde o que estiver fora da div*/
+}
+
+.destaques h1 {
+    position: absolute; /*Posiciona na div destaques*/
+    font-size: 45px;
+    top: 8%;
+    left: 14%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.gtadestaque {
+    display: flex;
+    flex-direction: column; /*Posiciona os elementos em forma de coluna*/
+    justify-content: center;
+    align-items: center;
+    margin-right: 35%;
+    height: 100%;
+    position: relative;
+    top: 67px;
+}
+.gtadestaque img {
+    height: 540px;
+    width: 900px;
+    border-radius: 25px;
+}
+
+.gtadestaque img:hover {
+    transform: scale(105%);
+    transition: all 0.3s ease;
+}
+
+.gtadestaque p {
+    font-size: 22px;
+    margin-top: 6px;
+    width: 870px;
+}
+
+.gowdestaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 48%;
+    bottom: 630px;
+}
+
+.gowdestaque img {
+    width: 450px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.gowdestaque img:hover {
+    transform: scale(105%);
+    transition: all 0.3s ease;
+}
+
+.gowdestaque p {
+    font-size: 22px;
+    margin-top: 3px;
+    width: 420px;
+}
+
+.horizondestaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 48%;
+    bottom: 645px;
+}
+
+.horizondestaque img {
+    width: 450px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.horizondestaque img:hover {
+    transform: scale(105%);
+    transition: all 0.3s ease;
+}
+
+.horizondestaque p {
+    font-size: 22px;
+    margin-top: 3px;
+    width: 415px;
+}
+
+.catalogo {
+    background-image: url('/images/fundo2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 160px);
+    position: relative;
+    overflow: hidden;
+}
+
+.catalogo h1 {
+    position: absolute;
+    font-size: 40px;
+    top: 2%;
+    left: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.setaesq {
+    filter: invert(100%); /*Deixa a seta branca*/
+    width: 100px !important; /*Força o tamanho para não entrar em conflito com os atributos da .acao img*/
+    height: 100px !important;
+    align-self: center;
+}
+
+.setadir {
+    filter: invert(100%);
+    width:100px !important;
+    height:100px !important;
+    align-self: center;
+}
+
+.setabaixo {
+    filter: invert(100%);
+    width: 50px !important;
+    height: 50px !important;
+    align-self: center;
+}
+
+.acao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55%;
+    height: 100%;
+    position: relative;
+    bottom: 280px;
+}
+
+.acao h2 {
+    margin-top: 25%;
+    font-size: 28px;
+}
+
+.acao img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: 10;
+}
+
+.acao img:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease;
+}
+
+.acaoimg {
+    display: flex;
+    gap: 50px;
+    margin-left: 110%;
+}
+
+.rpg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55%;
+    height: 100%;
+    position: relative;
+    bottom: 650px;
+}
+
+.rpg h2 {
+    font-size: 28px;
+}
+
+.rpg img {
+    height: 200px;
+    width: 200px;
+}
+
+.rpg img:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease;
+}
+
+.rpgimg {
+    display: flex;
+    gap: 50px;
+    margin-left: 110%;
+}
+
+.vermais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5%;
+    left: 50%;
+}
+
+.vermais h3 {
+    margin-bottom: 3px;
+}
+
+.acessorios {
+    background-image: url('/images/fundo2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 160px);
+    position: relative;
+    overflow: hidden;
+}
+
+.acessorios h1 {
+    position: absolute;
+    font-size: 40px;
+    top: 2%;
+    left: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55%;
+    margin-top: 4%;
+}
+
+.itens h2 {
+    font-size: 28px;
+}
+
+.itens img {
+    height: 200px;
+    width: 200px;
+}
+
+.itens img:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease;
+}
+
+.itensimg {
+    display: flex;
+    gap: 50px;
+    margin-left: 110%;
+}
+
+.itenstext {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 54.9%;
+    bottom: 6px;
+}
+
+.itenstext p {
+    white-space: nowrap; /*Impede a quebra da linha*/
+}
+
+.itenstext p:nth-child(2) { /*Seleciona apenas o segundo <p>*/
+    margin-left: 100px;
+}
+
+.itenstext p:nth-child(3) {
+    margin-left: 42px;
+}
+
+.itenstext p:nth-child(4) {
+    margin-left: 82.8px;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 52%;
+    margin-top: -15px;
+}
+
+.action h2 {
+    font-size: 28px;
+    margin-left: 35%;
+}
+
+.action img {
+    height: 200px;
+    width: 200px;
+}
+
+.action img:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.3s ease;
+}
+
+.actionimg {
+    display: flex;
+    gap: 50px;
+    margin-left: 110%;
+}
+
+.actiontext {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 55.3%;
+    bottom: 6px;
+}
+
+.actiontext p {
+    white-space: nowrap; /*Impede a quebra da linha*/
+}
+
+.actiontext p:nth-child(2) { /*Seleciona apenas o segundo <p> dentro da classe itenstext*/
+    margin-left: 80px;
+}
+
+.actiontext p:nth-child(3) {
+    margin-left: 75px;
+}
+
+.actiontext p:nth-child(4) {
+    margin-left: 83px;
+}
